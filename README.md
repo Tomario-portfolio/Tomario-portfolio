@@ -29,6 +29,7 @@ Tomario（ポートフォリオ全体）
 └── tomario-steering/       … 設計判断の記録・試験・リリース管理
     ├── adr/                    … ADR（設計判断の背景・理由）
     ├── verification/           … 非機能試験の計画・手順・結果
+    ├── operations/             … 障害対応手順（ランブック）
     └── release-management/     … リリース判定・カットオーバー・切り戻し
 ```
 
@@ -39,4 +40,4 @@ Tomario（ポートフォリオ全体）
 | [tomario-infra](https://github.com/Tomario-portfolio/tomario-infra) | Terraformによるインフラ管理（12モジュール構成、nonprod/prodアカウント分離） |
 | [tomario-app](https://github.com/Tomario-portfolio/tomario-app) | Flask API + 静的フロントエンド |
 | [tomario-docs](https://github.com/Tomario-portfolio/tomario-docs) | 要件定義書・基本設計書・環境定義書 |
-| [tomario-steering](https://github.com/Tomario-portfolio/tomario-steering) | ADR・非機能試験・リリース管理 |
+| [tomario-steering](https://github.com/Tomario-portfolio/tomario-steering) | ADR・非機能試験・運用手順・リリース管理 |

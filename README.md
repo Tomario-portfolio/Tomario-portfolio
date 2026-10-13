@@ -3,7 +3,7 @@
 ホテルの客室予約システム「Tomario」のAWSインフラポートフォリオ、各リポジトリへの入り口となるトップページです。
 
 Terraform + GitHub Actions でAWSインフラをコードで管理しています。
-dev（開発）・staging（負荷試験・障害試験）・production（本番）の3環境を、nonprod（dev/staging）とprod（production）の2つのAWSアカウントに分離し、staging で検証した構成とイメージをそのまま production に適用しています。
+dev（開発）・staging（負荷試験・障害試験）・production（本番）の3環境を、nonprod（dev/staging）とprod（production）の2つのAWSアカウントに分離しています。アプリの共通基盤（ネットワーク・ECS・RDS・CI/CD）は staging で検証した構成とイメージを production に適用し、production 固有の構成（WAF・AWS Config・Security Hub）は production で別途検証しています。
 
 ## ディレクトリ構成
 
